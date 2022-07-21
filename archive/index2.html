@@ -1,0 +1,284 @@
+<!doctype html>
+  <html lang="sv"><head>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="utf-8">
+    <meta property="og:locale" content="sv_SE">
+    <title>Repairstation - Go to for reparing</title>
+    <meta name="description" content="description here">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="#">
+    <meta name="twitter:title" content="Hitta ställen att repararera prylar i Stockholm">
+    <meta name="twitter:description" content="description here">
+    <meta name="twitter:image" content="#/images/logo/bildlogotyp.png">
+    <meta name="twitter:image:alt" content="Repairstation logotyp">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="#">
+    <meta property="og:title" content="Hitta ställen att repararera prylar i Stockholm">
+    <meta property="og:description" content="description here">
+    <meta property="og:image" content="bildlogotyp.png">
+    <meta property="og:image:width" content="480">
+    <meta property="og:image:height" content="480">
+    <meta property="og:image:alt" content="Repairstation logotyp">
+
+    <!--    <link rel="stylesheet" href="fonts.css">-->
+
+    <!--    <link rel="stylesheet" href="base.css">-->
+    <link rel="stylesheet" href="home.css">
+    <!-- <link rel="stylesheet" href="main.css"/>-->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <!--<link rel="manifest" href="/site.webmanifest">-->
+
+
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@7.3.1/themes/reset-min.css"/>
+  </head>
+  <body>
+
+<!--	<div id="cookie-banner-container"><section id="cookie-banner"><p>Solcellskollen använder cookies i syfte att erbjuda en mer användarvänlig upplevelse. Genom att klicka eller navigera på sidan accepterar du insamling av dessa.</p>
+  <button id="cookie-banner-button">Okej</button>-->
+
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="/"> <img width="40" height="40" alt="" src="img/repair.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="#">Vanliga frågor</a>
+        <a class="nav-item nav-link" href="/">Hitta</a>
+        <a class="nav-item nav-link " href="#"> Om oss</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+<!--
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+  var typed = new Typed('#typed', {
+    stringsElement: '#typed-strings'
+  });
+</script>
+
+<div id="typed-strings">
+  <p>Typed.js is a <strong>JavaScript</strong> library.</p>
+  <p>It <em>types</em> out sentences.</p>
+</div>
+<span id="typed"></span>
+-->
+
+    <section id="pitch">
+      <div>
+        <h1 style="font-size:2.8em;margin-bottom:0;">Hitta reperatörer. Allt på ett ställe.</h1>
+        <p class="mt-1" id="pitch-introduction">Jämför reparationsställen när till dig.</p>
+        <div id="card-container">
+          <article class="mx-auto pitch-card">
+            <h2>Hitta repartör</h2>
+            <form>
+              <div class="row">
+                <div class="col-lg-12 col-12 mx-auto">
+                  <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 p-0">
+                     <div id="search-box"></div>
+                   </div>
+                   <div class="row">
+                     <div class="col-lg-6 col-md-6 col-sm-12 p-0">
+                      <button type="button" class="btn btn-lg btn-primary btn-block">Hitta</button>
+                    </div>
+                  </div>
+                </div>
+              </div>    
+            </div>
+          </form>
+
+        </article>
+
+      </div>
+    </section>
+
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="mt-5 col-md-6 mx-auto">
+            <h2 class="text-center">Repartörer i Stockholm</h2>
+            <p class="text-center" style="font-size: 1.3em;">Sök bland prisvärda reperatörer inom Stockholmsområdet</p>
+          </div>
+        </div>
+
+  <div class="row mx-auto">
+    <div class="col-md-3 col-sm-12">
+      <a href="Stockholm.html"> <img src="img/stockholm-small.png" class="city-image" style="border-radius:15px;"></a>
+    </div> 
+    <div class="col-md-3 col-sm-12">
+      <a href="Goteborg.html"><img src="img/goteborg-small.png" class="city-image" style="border-radius:15px;"> </a>
+    </div>  
+    <div class="col-md-3 col-sm-12">
+      <a href="Malmo.html"><img src="img/malmo-small.png" class="city-image" style="border-radius:15px;"></a>
+    </div> 
+    <div class="col-md-3 col-sm-12">
+      <a href="Uppsala.html">  <img src="img/uppsala-small.png" class="city-image" style="border-radius:15px;"></a>
+    </div>
+  </div>
+
+        <div class="row mt-5">
+          <div class="col-md-2"></div>
+          <div class="col-md-8">
+            <main style="margin-bottom:100px;">  
+              <div id="hits" style="background-color:white;"></div>
+              <div id="pagination"></div>
+            </main>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div id="hits">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div id="pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <div>
+    <div class="review-cards">
+<!--    <div id="average-rating"><h3>Text</h3>
+      <p>Text</p>
+    </div>
+    <article class="review-card"><img class="placeholder-img" alt="Illustration av en sol som tittar fram" src="https://solcellskollen.imgix.net/images/review_placeholder_beige.svg" />
+      <div class="review-description"><span class="stars"><img class="star-lg" width="20" height="20" alt="Illustration av en stjärna" src="https://solcellskollen.imgix.net/images/star_full.svg" />
+        <img class="star-lg" width="20" height="20" alt="Illustration av en stjärna" src="https://solcellskollen.imgix.net/images/star_full.svg" />
+        <img class="star-lg" width="20" height="20" alt="Illustration av en stjärna" src="https://solcellskollen.imgix.net/images/star_full.svg" />
+        <img class="star-lg" width="20" height="20" alt="Illustration av en stjärna" src="https://solcellskollen.imgix.net/images/star_full.svg" />
+        <img class="star-lg" width="20" height="20" alt="Illustration av en stjärna" src="https://solcellskollen.imgix.net/images/star_full.svg" />
+      </span>
+
+      <h4>Lennart om Reparatör</h4>
+      <p class="review-text">Vi hade problem med starkströmselektrikern som installerade anläggningen fel. Vilket fick till följd att den inte fungerade.</p>
+    </div>
+  </article>
+</div>
+<div class="review-cards"><article class="review-card"><img class="placeholder-img" alt="Illustration av en sol som tittar fram" src="https://solcellskollen.imgix.net/images/review_placeholder_green.svg" />
+  <div class="review-description"><span class="stars"><img class="star-lg" width="20" height="20" alt="Illustration av en stjärna" src="https://solcellskollen.imgix.net/images/star_full.svg" />
+    <img class="star-lg" width="20" height="20" alt="Illustration av en stjärna" src="https://solcellskollen.imgix.net/images/star_full.svg" />
+    <img class="star-lg" width="20" height="20" alt="Illustration av en stjärna" src="https://solcellskollen.imgix.net/images/star_full.svg" />
+    <img class="star-lg" width="20" height="20" alt="Illustration av en stjärna" src="https://solcellskollen.imgix.net/images/star_full.svg" />
+    <img class="star-lg" width="20" height="20" alt="Illustration av en stjärna" src="https://solcellskollen.imgix.net/images/star_full.svg" />
+  </span>
+
+
+  <h4>Nils om Egen Energi AB</h4>
+  <div class="clipped-text"><input type="checkbox" id="hident6" autocomplete="off">
+    <p class="review-text">Bara en positiv upplevelse att anlita Egen Energi. Jämförde med en handfull bolag och fick bäst intryck av dessa. Att det var samma personer som var ute och tittade/gav offert som sedan skulle göra själva arbetet gjorde att det kändes väldigt tryggt! De gav en bra offert och gjorde en lika bra installation med ett mycket trevligt och proffsigt bemötande! Mycket nöjda från början till slut och kan varmt rekommendera bolaget!</p>
+    <label for="hident6" role="button"><img alt="Illustration av en nedåtpil" src="https://www.solcellskollen.se/static/img/chevron-down-small.svg?etag=jyHw7uG_" />
+      <span>Läs mer</span>
+    </label>
+  </div>
+</div
+</article>>
+<div id="find-installer-pitch"><h3>Vill du se vilka leverantörer som finns där du bor och läsa fler omdömen?</h3>
+  <a class="green-link" href="https://www.solcellskollen.se/hitta-leverantor">Hitta leverantör</a>
+</div>-->
+</div>
+</div>
+</section>
+
+<section id="podcast" data-test="podcast">
+  <div>
+    <h2 class="mb-0" style="font-size: 2em;">Something here</h2>
+    <p id="intro">More info here and some more information here</p>
+
+    <div class="podcast-card-landing">
+      <div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+<section id="blog"><div><div id="image-container"><img alt="" src="img/cover.jpeg" />
+</div>
+<div id="post-container"><p>Senaste nytt</p>
+  <h2>Stay up-to-date med mail</h2>
+  <p>Här kan du få mer info... </p>
+
+</div>
+</div>
+</section>
+
+</main>
+<style>
+
+  a {
+    color: black !important;
+    text-decoration: none;
+  }
+  ul {
+    list-style-type: none;
+  }
+</style>
+
+<footer>
+  <div class="container">
+    <div class="row mb-3 mt-5">
+      <div class="col-md-4">
+        <h4><strong>Repairstation</strong></h4>
+        <ul style="padding-left:0;">
+          <li><a href="#">Om oss</a>
+          </li>
+          <li>
+            <a href="mailto:info@">info@</a>
+          </li>
+
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h4><strong>Övrigt</strong></h4>
+        <ul style="padding-left:0;">
+          <li><a href="#">Utbud</a>
+          </li>
+          <li><a href="#">Vanliga frågor</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h4><strong>Villkor</strong></h4>
+        <ul  style="padding-left:0;">
+          <li><a href="#">Användarvillkor</a>
+          </li>
+          <li><a href="#">Personuppgiftspolicy</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.8.3/dist/instantsearch.production.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/scriptjs@2.5.9/dist/script.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.0.0-beta.13/dist/algoliasearch-lite.umd.min.js"></script>
+
+
+<script src="app.js"></script>
+</footer>
+</body>
+</html>

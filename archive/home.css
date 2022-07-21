@@ -1,0 +1,552 @@
+/* PITCH SECTION */
+
+#pitch {
+  background: no-repeat url('https://solcellskollen.imgix.net/images/green_bg_mobile.svg');
+  background-size: cover;
+  padding: 4rem 1rem 3rem;
+  margin: 0;
+}
+
+a, nav-item, nav-link {
+  text-decoration: none;
+}
+
+.smaller-description {
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+}
+
+#pitch * {
+  text-align: center;
+}
+
+#pitch > p {
+  max-width: 16em;
+  margin: 0 auto 0;
+}
+
+.pitch-card {
+  background: white;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.pitch-card img {
+  width: 4rem;
+  height: 4rem;
+  margin-bottom: 1rem;
+}
+
+.pitch-card h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.125rem;
+  font-family: Futura-Dem, sans-serif;
+}
+
+.pitch-card p {
+  margin-bottom: 1rem;
+  line-height: 1.25;
+}
+
+.pitch-card:first-of-type {
+  margin: 3rem 0 1rem 0;
+}
+
+/* REVIEWS SECTION */
+#reviews {
+  padding: 2rem 1rem;
+}
+
+#reviews > h2 {
+  margin-bottom: 1rem;
+  font-family: Futura-Dem, sans-serif;
+  text-align: center;
+}
+
+#reviews > p {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#average-rating {
+  background: rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+#average-rating h3 {
+  font-size: 1.125rem;
+  font-family: Futura-Boo, sans-serif;
+  line-height: 1.5;
+  margin-bottom: 0;
+  max-width: 11em;
+  text-align: center;
+}
+
+#average-rating p {
+  font-size: 3rem;
+  font-family: Futura-Dem, sans-serif;
+  margin-bottom: 0;
+}
+
+.review-card {
+  background: rgb(229, 242, 239);
+}
+
+.review-cards > * + * {
+  margin-top: 1rem;
+}
+
+.review-cards:last-of-type {
+  margin-top: 1rem;
+}
+
+
+.review-card > .review-description {
+  padding: 1.5rem 1.5rem 2rem;
+}
+
+.review-card .stars > img {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.review-card h4 {
+  margin-top: 1rem;
+}
+
+.review-card p {
+  margin-bottom: 0;
+}
+
+#find-installer-pitch {
+  background: rgba(0, 0, 0, 0.05);
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#find-installer-pitch h3 {
+  font-size: 1.125rem;
+  font-family: Futura-Boo, sans-serif;
+  line-height: 1.5;
+  max-width: 20em;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* PODCAST SECTION */
+
+#podcast {
+  background: no-repeat url('https://solcellskollen.imgix.net/images/near_white_bg_mobile.svg');
+  background-position: center;
+  background-size: cover;
+  padding: 3rem 0;
+}
+
+#podcast > div {
+  margin: 0 1rem;
+}
+
+#podcast h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 0 auto 1rem;
+  font-family: Futura-Dem, sans-serif;
+  max-width: 10em;
+}
+
+#podcast > div > p {
+  max-width: 14em;
+  margin: 3rem auto 0;
+  text-align: center;
+}
+
+#podcast #intro {
+  max-width: 16em;
+  margin: 0 auto 2rem;
+  text-align: center;
+}
+
+#podcast #outro {
+  max-width: 14em;
+  margin: 3rem auto 0;
+  text-align: center;
+}
+
+#podcast #outro > a, #podcast #outro > a:hover  {
+  border-bottom: 0;
+}
+
+#podcast-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#podcast .green-link:first-of-type {
+  margin-bottom: 0.5rem;
+}
+
+.podcast-card-landing {
+  background: white;
+  padding: 2.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.podcast-card-landing img {
+  width: 104px;
+  height: 104px;
+  margin-bottom: 1rem;
+}
+
+.podcast-card-landing > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.podcast-card-landing p {
+  color: rgb(127, 112, 116);
+}
+
+.publish-date , .publish-date > * {
+  font-size: 1rem;
+}
+
+.publish-date {
+  margin-bottom: 2rem;
+}
+
+time:first-of-type::after {
+  content: 'â—';
+  font-size: 0.75rem;
+  margin: 0 0.5rem;
+}
+
+.podcast-card-landing h3 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  max-width: 20em;
+}
+
+/* BLOG SECTION */
+#blog {
+  padding: 1rem;
+}
+
+#blog #image-container {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.05) 50%);
+  padding: 1.5rem;
+}
+
+#blog #post-container {
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+#blog p:first-of-type {
+  color: rgb(127, 112, 116);
+}
+
+#blog p:last-of-type {
+  margin-bottom: 2rem;
+}
+
+#blog h2 {
+  font-family: Futura-Dem, sans-serif;
+  max-width: 13em;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#blog .centered-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#blog .green-link:first-of-type {
+  margin-bottom: 0.5rem;
+}
+
+/* REUSABLE STUFF */
+.green-link {
+  background: rgb(72, 121, 98);
+  border-radius: 0.25rem;
+  color: white;
+  padding: 1rem 1.5rem;
+  line-height: 1.15;
+  border-bottom: 0;
+}
+
+.green-link:focus {
+  outline: 1px dotted rgb(72, 121, 98);
+}
+
+.green-link:hover {
+  background: rgb(98, 147, 126);
+  transition: background-color .15s ease-in;
+  border-bottom: 0;
+}
+
+.green-link-inverted {
+  background: transparent;
+  border-radius: 0.25rem;
+  color: rgb(72, 121, 98);
+  padding: 1rem 1.5rem;
+  line-height: 1.15;
+  border-bottom: 0;
+}
+
+/* Improve hover state since the button is placed on different background */
+/* colors */
+.green-link-inverted:hover {
+  background: rgba(0, 0, 0, 0.025);
+  transition: background-color .15s ease-in;
+  border-bottom: 0;
+}
+
+.green-text-link {
+  color: rgb(72, 121, 98);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .review-cards:last-of-type {
+    margin-left: 3rem;
+  }
+}
+
+@media(min-width: 30em) {
+  /* PITCH SECTION */
+  #pitch {
+    padding: 8rem 0 0;
+    background: no-repeat url('https://solcellskollen.imgix.net/images/green_bg_desktop.svg');
+    background-size: cover;
+    height: 644px;
+  }
+
+  #pitch > div {
+    max-width: 848px;
+    margin: 0 auto;
+  }
+
+  #pitch h1 {
+    font-size: 3rem;
+    line-height: 1.25;
+    margin: 0 auto 1.5rem;
+  }
+
+  #pitch-introduction {
+    font-size: 1.5rem;
+    max-width: 20em;
+    margin: 0 auto 50px;
+  }
+
+  #card-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .pitch-card {
+    margin: 0;
+    padding: 2rem;
+  }
+
+  .pitch-card:first-of-type {
+    margin: 0 3rem 0 0;
+  }
+
+  .pitch-card h2 {
+    font-size: 1.5rem;
+  }
+
+  .pitch-card p {
+    max-width: 20em;
+    margin-bottom: 2rem;
+  }
+
+  /* REVIEWS SECTION */
+  #reviews {
+    margin: 0 auto;
+    max-width: 848px;
+    padding: 234px 0 8rem;
+  }
+
+  #reviews > p {
+    max-width: 100%;
+    margin: 0 auto 4rem;
+  }
+
+  #reviews > div {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  .review-cards:last-of-type {
+    margin-top: 0;
+  }
+
+  .review-cards {
+    max-width: 400px;
+  }
+
+  .review-cards > * + * {
+    margin-top: 3rem;
+  }
+
+  #average-rating {
+    margin: 0;
+  }
+
+  .review-card {
+    max-width: 400px;
+  }
+
+  #find-installer-pitch, #average-rating {
+    padding: 2rem 4rem;
+  }
+
+  #find-installer-pitch h3 {
+    font-size: 1.25rem;
+  }
+
+  #average-rating h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+
+  #average-rating p {
+    font-size: 4rem;
+  }
+
+  /* PODCAST SECTION */
+  #podcast {
+    background: no-repeat url('https://solcellskollen.imgix.net/images/near_white_bg_desktop.svg');
+    background-size: cover;
+    background-position: center;
+    padding: 104px 0 3.5rem;
+  }
+
+  #podcast > div {
+    max-width: 848px;
+    margin: 0 auto;
+  }
+
+  #podcast #intro {
+    text-align: left;
+    font-size: 1.5rem;
+    max-width: 24em;
+    margin: 0 0 40px;
+  }
+
+  #podcast h2 {
+    font-size: 3rem;
+    text-align: left;
+    margin: 0 0 1.5rem;
+  }
+
+  .podcast-card-landing {
+    padding: 3.5rem;
+    flex-direction: row;
+    align-items: left;
+  }
+
+  .podcast-card-landing img {
+    width: 216px;
+    height: 216px;
+    margin: 0 3rem 0 0;
+  }
+
+  .podcast-card-landing > div {
+    align-items: flex-start;
+  }
+
+  .podcast-card-landing h3 {
+    text-align: left;
+    font-size: 1.5rem;
+    max-width: 100%;
+  }
+
+  .podcast-card-landing p {
+    margin-bottom: 0.5rem;
+  }
+
+  #podcast-links {
+    flex-direction: row;
+  }
+
+  #podcast .green-link:first-of-type {
+    margin: 0 1rem 0 0;
+  }
+
+  #podcast #outro {
+    max-width: 20em;
+    margin: 3rem auto 0;
+  }
+
+
+  /* BLOG SECTION */
+  #blog {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0.05) 40%);
+    padding: 172px 1rem;
+    margin: 1rem;
+  }
+
+  #blog > div {
+    display: flex;
+    align-items: center;
+    max-width: 848px;
+    margin: 0 auto;
+  }
+
+  #blog #post-container {
+    background: none;
+    padding: 0;
+  }
+
+  #post-container p {
+    margin-bottom: 0.5rem;
+  }
+
+  #blog #image-container {
+    background: none;
+    padding: 0;
+    margin-right: 3rem;
+  }
+
+  #blog #image-container img {
+    max-width: 400px;
+  }
+
+  #blog h2 {
+    font-family: Futura-Dem, sans-serif;
+    max-width: 13em;
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+  }
+
+  #blog .centered-links {
+    flex-direction: row;
+  }
+
+  #blog .green-link:first-of-type {
+    margin: 0 1rem 0 0;
+  }
+
+  /* REUSABLE STUFF */
+  .green-link, .green-link-inverted  {
+    padding: 1rem 2rem;
+  }
+}

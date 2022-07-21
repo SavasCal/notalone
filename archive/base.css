@@ -1,0 +1,994 @@
+/* IE11 doesn't support CSS variables, here's an index of colors etc: */
+
+/* black-0075: rgba(0, 0, 0, 0.075) */
+/* black-025: rgba(0, 0, 0, 0.025) */
+/* black-05: rgba(0, 0, 0, 0.05) */
+/* black-10: rgba(0, 0, 0, 0.1) */
+/* black: #231f20, */
+/* container-size: 848px */
+/* dark-gray: rgb(127, 112, 116) */
+/* dark-green: rgb(72, 121, 98) */
+/* dark-green-hover: rgb(98, 147, 126) */
+/* dark-white: rgb(246, 233, 218) */
+/* darker-gray: rgb(93, 82, 84) */
+/* gray: #d8d4d1, */
+/* green: rgb(229, 242, 239) */
+/* light-gray: #f2f2f2, */
+/* light-green: rgb(229, 242, 239) */
+/* light-pink: #f8dbd7, */
+/* near-near-white: rgb(253, 241, 226) */
+/* near-white: rgb(248, 224, 197) */
+/* orange: #f98d68, */
+/* dark-orange: #f7561f */
+/* light-red: #f8ab8a, */
+/* red: #f58c68 */
+/* white: rgb(255, 255, 255) */
+/* yellow: rgb(255, 193, 28) */
+/* demi: Futura-Dem, sans-serif */
+/* bold: Futura-Bol, sans-serif */
+/* book: Futura-Boo, sans-serif */
+/* book-obl: Futura-BooObl, sans-serif */
+/* medium: Futura-Med, sans-serif */
+
+* {
+  box-sizing: border-box;
+}
+
+/* To avoid a jumping screen when toggling modals, we always show the
+ * scrollbar, regardless of the size of the page. An alternative approach is
+ * described at https://aykevl.nl/2014/09/fix-jumping-scrollbar, but that
+ * doesn't work with pages which use a full width image as a background (e.g.
+ * /vanliga-fragor).
+ */
+html {
+  overflow-y: scroll !important;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: Futura-Boo, sans-serif;
+  font-size: 1.125rem;
+  color: #231f20;
+  line-height: 1.5;
+}
+
+main {
+  min-height: 100vh;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* FOOTER */
+footer {
+  margin: 0;
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 2rem 0rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: 1px solid transparent;
+}
+
+footer a {
+  border-bottom: 2px solid transparent;
+  line-height: 1;
+}
+
+footer a:hover {
+  border-bottom: 2px solid #231f20;
+  transition: border-color .15s ease-in;
+}
+
+footer img {
+  margin: 1rem auto 0 auto;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer h3 {
+  font-size: 1.125rem;
+}
+
+footer > section {
+  max-width: 848px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+footer p {
+  max-width: none;
+}
+
+footer > div > * + * {
+  margin-top: 2rem;
+}
+
+footer .newsletter-section a {
+  text-decoration: none;
+  border-bottom: 1px solid #231f20;
+}
+
+footer .newsletter-section a:hover {
+  border-bottom: 1px solid transparent;
+  transition: border-bottom .15s ease-in;
+}
+
+p {
+  max-width: 30em;
+  line-height: 1.5;
+  margin: 0 0 0.5rem 0;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+ -moz-appearance: textfield;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+/* NEWSLETTER FORM */
+.newsletter-container {
+  margin-bottom: 4rem;
+}
+
+#newsletter-form {
+  scroll-margin-top: 120px;
+}
+
+#cookie-banner-container {
+  background: rgb(248, 224, 197);
+}
+
+#cookie-banner {
+  max-width: 848px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#cookie-banner button {
+  border: 0;
+  padding: 0.5rem 1rem;
+  background: #231f20;
+  color: rgb(248, 224, 197);
+  border-radius: 0.25rem;
+  font-family: Futura-Boo, sans-serif;
+  font-size: 1rem;
+}
+
+#cookie-banner p {
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+a {
+  color: #231f20;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 400;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  margin-top: 0rem;
+  font-family: Futura-Dem, sans-serif;
+  line-height: 1.25;
+  max-width: 20em;
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-family: Futura-Bol, sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-family: Futura-Dem, sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  margin: 0 0 0.25rem 0;
+}
+
+h4 {
+  font-size: 1.25;
+  font-family: Futura-Dem, sans-serif;
+  margin: 0 0 0.5rem;
+  line-height: 1.25;
+}
+
+ul, ol {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+em {
+  font-style: normal;
+  font-family: Futura-BooObl, sans-serif;
+}
+
+/* LAYOUTS */
+
+.stack > *, .stack-large > * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.stack > * + * {
+  margin-top: 3rem;
+}
+
+.stack-large > * + * {
+  margin-top: 2rem;
+}
+
+.stack-xl > * + * {
+  margin-top: 4rem;
+}
+
+/* END LAYOUTS */
+
+.content-container {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 4rem;
+}
+
+.horizontal-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 4rem;
+}
+
+.horizontal-container div {
+  max-width: 24rem;
+}
+
+.submit-button {
+  font-family: Futura-Boo, sans-serif;
+  font-size: 1.125rem;
+  cursor: pointer;
+  border-width: 0;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  color: rgb(255, 255, 255);
+  background-color: #231f20;
+}
+
+.submit-button:hover {
+  opacity: 0.85;
+  transition: opacity .15s ease-in;
+  border-bottom: 0;
+}
+
+.timestamp {
+  color: rgb(127, 112, 116);
+  font-size: 1rem;
+}
+
+.centered {
+  max-width: 848px;
+  margin: 4rem auto;
+}
+
+
+.error {
+  background: #f8dbd7;
+}
+
+.error-container {
+  padding: 2rem 1rem;
+}
+
+.error-container img {
+  width: 8rem;
+  margin: 0 auto 2rem auto;
+}
+
+.error-container h1, .error-container p {
+  text-align: center;
+}
+
+.error-container p {
+  max-width: 24em;
+}
+
+.markdown p {
+	color: #231f20;
+	font-family: Futura-Boo, sans-serif;
+	font-size: 1.125rem;
+	line-height: 1.5;
+	margin-bottom: 2rem;
+	margin-top: 0rem;
+	max-width: 30em;
+}
+
+/* NEWSLETTER SIGNUP FORM */
+.newsletter-banner {
+  padding: 1.5rem;
+  background-color: rgb(229, 242, 239);
+}
+
+.newsletter-banner > img {
+  width: 50px;
+  margin-bottom: 0.5rem;
+}
+
+.newsletter-form label {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  background: rgb(248, 224, 197);
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: none;
+  border-left: 2px solid black;
+  border-radius: 5px 5px 0 0;
+  box-shadow: rgba(210, 210, 210, 0.5) 0px 3px 0px 0px inset;
+  font-size: 1.125rem;
+  line-height: 1;
+}
+
+.newsletter-form input {
+  display: block;
+  width: 100%;
+  border-radius: 0 0 5px 5px;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  height: 36px;
+  box-shadow: rgba(210, 210, 210, 0.5) 0px 3px 0px 0px inset;
+  font-size: 1.125rem;
+  font-family: Futura-Boo, sans-serif;
+  padding-left: 0.5rem;
+}
+
+.newsletter-form button {
+  margin-top: 1rem;
+  display: block;
+  width: 100%;
+}
+
+.newsletter-form .form-errors {
+  margin-top: 1.5rem;
+}
+
+/* MARKDOWN */
+
+.markdown {
+  margin-top: 1rem;
+  margin-bottom: 6rem;
+}
+
+.markdown h2 {
+	color: #231f20;
+	margin-bottom: 1rem;
+	margin-top: 4rem;
+	font-family: Futura-Bol, sans-serif;
+	font-weight: 400;
+	line-height: 1.25;
+	font-size: 1.25rem;
+}
+
+.markdown h3 {
+	font-family: Futura-Dem, sans-serif;
+	font-weight: 400;
+	line-height: 1.25;
+	font-size: 1.125rem;
+	margin-bottom: 1rem;
+}
+
+/* MARKDOWN TABLES */
+.markdown h3 + table {
+  margin-top: 1.5rem;
+}
+
+.markdown table {
+	border-collapse: collapse;
+	margin-bottom: 1rem;
+	width: 100%;
+}
+
+.markdown thead, .markdown tbody {
+	border-collapse: collapse;
+}
+
+.markdown tr {
+	border: 1px solid #d8d4d1;
+}
+
+.markdown th {
+	font-family: Futura-Med, sans-serif;
+}
+
+.markdown td, .markdown th {
+	font-size: 1rem;
+	line-height: 1.25;
+	padding: 0.5rem;
+  /* Important is required since align: middle and align:right gets applied
+   * automatically, possibly by the markdown processor. */
+  text-align: left !important;
+	border-right: 1px solid #d8d4d1;
+}
+
+.markdown th, .markdown strong {
+  font-family: Futura-Dem, sans-serif;
+  font-weight: normal;
+}
+
+.markdown img {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+
+.markdown ul {
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+.markdown ul > li {
+  list-style-type: disc;
+  margin-bottom: 0.5rem;
+}
+
+.markdown ol {
+  list-style-type: decimal;
+  padding: 0 0 0 2rem;
+  margin: 0 0 2rem 0;
+}
+
+.markdown ol > li {
+  margin-bottom: 0.5rem;
+}
+
+/* UTILITIES */
+.bg-black-05 {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.orange {
+  color: #f98d68;
+}
+
+.tb {
+  font-family: Futura-Bol, sans-serif;
+}
+
+.tm {
+  font-family: Futura-Med, sans-serif;
+}
+
+.no-js-warning {
+  font-family: Futura-BooObl, sans-serif;
+  font-weight: 900;
+  max-width: 100%;
+}
+
+.clipped-text {
+  position: relative;
+}
+
+.clipped-text input {
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.clipped-text p {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.review-description .clipped-text p {
+  -webkit-line-clamp: 3;
+}
+
+.clipped-text input:focus ~ label {
+  outline: -webkit-focus-ring-color auto 5px;
+}
+
+.clipped-text input:checked + p {
+  -webkit-line-clamp: unset;
+}
+
+.clipped-text input:checked ~ label {
+  display: none;
+}
+
+.clipped-text label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.clipped-text label > span {
+  margin-left: 0.5rem;
+  font-size: 1.125rem;
+  font-family: Futura-Boo, sans-serif;
+}
+
+.clipped-text label > img {
+  margin-bottom: 2px;
+}
+
+.review-text {
+  margin-top: 0.5rem;
+  position: relative;
+}
+
+.banner {
+  background: #d8d4d1;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.banner img {
+  width: 8rem;
+  margin-bottom: 2rem;
+}
+
+.banner > div {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+.banner :not(img) {
+  order: 1;
+}
+
+/* Modal */
+.circle {
+  width: 36px;
+  height: 36px;
+  background: white;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle > img {
+  width: 19px;
+  height: 19px;
+}
+
+.modal .circle {
+  display: none;
+}
+
+.modal > button * {
+  pointer-events: none;
+}
+
+.modal > button {
+  padding: 0;
+  border: 0;
+  display: block;
+  width: 100%;
+  position: relative;
+  pointer-events: none;
+}
+
+
+.modal > button:hover {
+  opacity: 0.9;
+  transition: opacity .15s ease-in;
+}
+
+.modal-img {
+  width: 100%;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+input:focus::-moz-placeholder,
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.star {
+  width: 18px;
+  height: 17px;
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+}
+
+.stars > * + * {
+  margin-left: 0.25rem;
+}
+
+.find-installer-ad {
+  background: rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.find-installer-ad-review {
+  margin-bottom: 1rem;
+}
+
+.find-installer-ad-pitch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.find-installer-ad p {
+  margin-bottom: 1rem;
+}
+
+.find-installer-ad .submit-button {
+  line-height: 1.15;
+}
+
+.find-installer-ad img {
+  width: 127px;
+  height: 86px;
+}
+
+.find-installer-ad .stars {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.find-installer-ad .star {
+  width: 20px;
+  height: 20px;
+}
+
+@media (min-width: 30em) {
+
+  .markdown td, .markdown th {
+    font-size: 1.125rem;
+  }
+
+  .markdown h2 {
+    font-size: 1.5rem;
+  }
+
+  body {
+    font-size: 1.25rem;
+  }
+
+  p {
+    margin: 0 0 1rem 0;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+    line-height: 1.15;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+
+  /* LAYOUTS */
+
+  .stack-large > * + * {
+    margin-top: 4rem;
+  }
+
+  /* END LAYOUTS */
+
+  .timestamp {
+    font-size: 1.125rem;
+  }
+
+  .content-container {
+    max-width: 848px;
+    margin: 0 auto 8rem auto;
+  }
+
+  footer > div > * + * {
+    margin-top: 0;
+  }
+
+  footer h3 {
+    font-size: 1.25rem;
+  }
+
+  footer li {
+    line-height: 1.25;
+  }
+
+  footer > div {
+    display: grid;
+    max-width: 848px;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1rem 0;
+
+    display: -ms-grid;
+    -ms-grid-rows: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr;
+  }
+
+  footer > div > *:nth-child(1) {
+      -ms-grid-column: 1;
+  }
+
+  footer > div > *:nth-child(2) {
+      -ms-grid-column: 2;
+  }
+
+  footer > div > *:nth-child(3) {
+      -ms-grid-column: 3;
+  }
+
+  footer > div > *:nth-child(4) {
+      -ms-grid-column: 1;
+      -ms-grid-row: 2;
+  }
+
+  footer > div > *:nth-child(5) {
+      -ms-grid-column: 2;
+      -ms-grid-row: 2;
+  }
+
+  footer > div > *:nth-child(6) {
+      -ms-grid-column: 3;
+      -ms-grid-row: 2;
+  }
+
+  footer section {
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  footer img {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .error-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 4rem 0 4rem 0;
+    max-width: 848px;
+  }
+
+  .error-container img {
+    width: 12rem;
+    margin: 0;
+  }
+
+  .error-container h1, .error-container p {
+    text-align: left;
+  }
+
+  .newsletter-container {
+    max-width: 848px;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+  }
+
+  .banner > div {
+    max-width: 848px;
+    justify-content: space-between;
+    padding: 3rem 0;
+    flex-direction: row;
+  }
+
+  .banner * {
+    max-width: 24em;
+    text-align: left;
+  }
+
+  .banner img {
+    width: 12rem;
+    order: 1;
+  }
+
+  .newsletter-banner {
+    border-radius: 8px;
+    display: flex;
+    max-width: 848px;
+    margin: 0 auto;
+  }
+
+  .submit-container input {
+    max-width: 18rem;
+    outline: none;
+  }
+
+  .submit-container input:focus {
+    border-radius: 0 7px 7px 0;
+    border: 2px solid rgba(0, 0, 0, 0.7);
+  }
+
+  .submit-container .success-msg {
+    font-family: Futura-Med, sans-serif;
+  }
+
+  .newsletter-form input {
+    border-radius: 0 5px 5px 0;
+    margin-right: 1rem;
+    height: 38px;
+  }
+
+  .newsletter-form > div {
+    display: flex;
+    margin-bottom: 0.5rem;
+  }
+
+  .newsletter-form label {
+    display: inline;
+    border: 2px solid black;
+    border-radius: 5px 0 0 5px;
+    border-right: none;
+  }
+
+  .newsletter-form button {
+    margin: 0;
+    display: inline-block;
+    white-space: nowrap;
+    text-align: center;
+    width: auto;
+  }
+
+  .newsletter-banner {
+    margin-bottom: 4rem;
+  }
+
+  .newsletter-banner p {
+    max-width: none;
+  }
+
+  .newsletter-banner > img {
+    align-self: flex-start;
+    margin-right: 2rem;
+    min-width: 50px;
+  }
+
+  .newsletter-form > div {
+    display: flex;
+  }
+
+  .markdown p {
+    font-size: 1.25rem;
+  }
+  .markdown h3 {
+    font-size: 1.25rem;
+  }
+
+  .banner {
+    margin-bottom: 8rem;
+  }
+
+  .center {
+    max-width: 848px;
+    margin: 0 auto;
+  }
+
+  #cookie-banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+  }
+
+  #cookie-banner p {
+    max-width: 34em;
+    margin: 0;
+    text-align: left;
+    font-size: 1.125rem;
+  }
+
+  #cookie-banner button {
+    font-size: 1.125rem;
+  }
+
+  /* Modal */
+  .reference-list .modal > button {
+    pointer-events: all;
+    position: relative;
+    width: 339px;
+    height: 226px;
+  }
+
+  .modal .circle {
+    display: flex;
+    position: absolute;
+    bottom: 0.5rem;
+    left: 0.5rem;
+  }
+
+  .modal-close-button {
+    position: absolute;
+    background: transparent;
+    top: 0.5rem;
+    padding: 0;
+    border: 0;
+    right: 0.5rem;
+  }
+
+  .modal-img-lg {
+    width: 100%;
+  }
+
+  .reference-list .modal-img {
+    width: 339px;
+    height: 226px;
+  }
+
+  .modal > button {
+    cursor: pointer;
+    pointer-events: auto;
+  }
+
+  .find-installer-ad {
+    max-width: 848px;
+    margin: 0 auto 4rem;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 2rem;
+  }
+
+  .find-installer-ad-review {
+    margin: 0 2rem 0 0;
+  }
+
+  .find-installer-ad-pitch {
+    align-items: flex-start;
+  }
+
+  .post-list-container h2 {
+    margin-bottom: 4rem;
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 60em) {
+  .newsletter-form input {
+    min-width: 18rem;
+}
