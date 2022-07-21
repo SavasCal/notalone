@@ -104,18 +104,72 @@
           <h3 class="text-center mt-0 mb-4"> Available stories</h3>
         </div>
 
-        <div id="left-column" class="card py-2 px-2">
-          <p> <strong> Stadsdelar </strong> </p>
-          <div id="category" class="facet"></div>
-          <div id="brand" class="facet"></div>
-          <div id="price" class="facet"></div>
-          <div id="type" class="facet"></div>
-          <div id="type" class="filter"></div>
-        </div>
+<div class="row">
+  <div class="col-md-12">
+            <div id="left-column" class="card py-4 px-4">
+              <p> <strong> Plats </strong> </p>
+              <div id="category" class="facet"></div>
+              <p> <strong> Produktmärke </strong> </p>
+              <div id="brand" class="facet"></div>
+              <p> <strong> Nyckelord </strong> </p>
+              <div id="price" class="facet"></div>
+              <div id="type" class="facet"></div>
+              <div id="type" class="filter"></div>
+            </div>
+</div>
+<div clas="row">
+          <div class="col-md-12">
+            <div id="right-column">
+              <div id="hits"></div>
+            </div>
+          </div>
+<div class="col-md-12" style="margin-top:200px !important;">
+       
 
-        <div id="right-column">
-          <div id="hits"></div>
+       
+  <script type="text/html" id="hit-template">
+        <div class="hit">
+          <div class="hit-image">
+            <img src="{{image}}" alt="{{name}}">
+          </div>
+          <div class="hit-content">
+            <div class="row">      
+              <div class="col-8 col-xs-12 col-md-8 col-sm-12">      
+                <a href="{{title_link}}" style="text-decoration:none;"> <h5 class="hit-name mb-2 text-dark">{{{_highlightResult.name.value}}}</h5></a>
+                <p class="hit-description">{{{_highlightResult.short_description.value}}}</p>
+                <p class="">{{{_highlightResult.location.value}}}</p>
+
+                <a href="{{link}}" class="btn btn-md btn-success"> Läs mer </a>
+              </div>
+              <div class="col-4 d-none d-sm-block d-xs-block">
+                <div class="card">
+                  <div class="card-body pb-0">
+                    <h6 class=""> Plats: </h6>
+                    <p class="">{{{_highlightResult.place.value}}}</p>
+                    <h6 class=""> Ranking: </h6>
+                    <p class="">{{{_highlightResult.rank.value}}}</p>
+                    <h6 class=""> Pris: </h6>
+                    <p class="" style="font-weight:500;"> Logga in för att se resultat</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </script>
+
+
+
+      <script type="text/html" id="no-results-template">
+        <div id="no-results-message">
+          <p>We didn't find any results for the search <em>"{{query}}"</em>.</p>
+          <a href="." class='clear-all'>Clear search</a>
+        </div>
+      </script>
+
+</div>
+
+
 
       <div class="container-fluid mt-5">
 
@@ -202,30 +256,7 @@
       <p class="mb-1 text-muted">In memory of Ulrika - Beloved mother to Lisa. </p>
       <small class="d-block mb-3 text-muted">&copy;2022</small>
     </div>
-      <!-- /INTERFACE -->
-
-      <!-- TEMPLATES -->
-      <script type="text/html" id="hit-template">
-        <div class="hit">
-          <div class="hit-image">
-            <img src="{{image}}" alt="{{name}}">
-          </div>
-          <div class="hit-content">
-            <a href="{{title_link}}"> <h4 class="hit-name">{{{_highlightResult.title.value}}}</h4></a>
-            <p class="hit-description">{{{_highlightResult.description.value}}}</p>
-            <p class="">{{{_highlightResult.location.value}}}</p>
-          </div>
-        </div>
-      </script>
-
-      <script type="text/html" id="no-results-template">
-        <div id="no-results-message">
-          <p>We didn't find any results for the search <em>"{{query}}"</em>.</p>
-          <a href="." class='clear-all'>Clear search</a>
-        </div>
-      </script>
-      <!-- /TEMPLATES -->
-
+   
 
    </div>
   </main>
@@ -233,7 +264,7 @@
 <!-- SCRIPTS -->
       <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.0.3/dist/algoliasearch-lite.umd.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.7.0/dist/instantsearch.production.min.js"></script>
-     <script src="search-simplified.js"></script>
+     <script src="search-simplified-company.js"></script>
       <!-- /SCRIPTS -->
 
 
