@@ -1,9 +1,9 @@
 /* global instantsearch algoliasearch */
 
 app({
-  appId: 'RQEAPZW16J',
-  apiKey: 'a6ae5607838ce25ebffe2477fb2b73bd',
-  indexName: 'company-repair',
+  appId: 'BLHYRRTEVV',
+  apiKey: '7aa12bdafd772595b8f2136a22d8b1d6',
+  indexName: 'stories-prod',
 });
 
 function app(opts) {
@@ -33,14 +33,6 @@ function app(opts) {
       },
     }),
     instantsearch.widgets.refinementList({
-      container: '#category',
-      attribute: 'place',
-      operator: 'or',
-      templates: {
-        header: getHeader('place'),
-      },
-    }),
-    instantsearch.widgets.refinementList({
       container: '#brand',
       attribute: 'brand',
       operator: 'or',
@@ -54,19 +46,12 @@ function app(opts) {
         header: getHeader('Brand'),
       },
     }),
-    //instantsearch.widgets.rangeSlider({
-    //  container: '#price',
-    //  attribute: 'price',
-    //  templates: {
-    //    header: getHeader('Price'),
-    //  },
-    //}),
     instantsearch.widgets.refinementList({
       container: '#type',
-      attribute: 'keyword',
+      attribute: 'attribute',
       operator: 'and',
       templates: {
-        header: getHeader('keyword'),
+        header: getHeader('attribute'),
       },
     }),
   ]);

@@ -106,19 +106,15 @@
 
 <div class="row">
   <div class="col-md-12">
-            <div id="left-column" class="card py-4 px-4">
-              <p> <strong> Plats </strong> </p>
-              <div id="category" class="facet"></div>
-              <p> <strong> Produktmärke </strong> </p>
-              <div id="brand" class="facet"></div>
-              <p> <strong> Nyckelord </strong> </p>
-              <div id="price" class="facet"></div>
+            <div id="left-column" class="card py-1 px-1 mb-3">
+              <p> <strong> Attributes to search for </strong> </p>
               <div id="type" class="facet"></div>
               <div id="type" class="filter"></div>
+              <div id="brand" class="facet"></div>
             </div>
 </div>
 <div clas="row">
-          <div class="col-md-12">
+          <div class="col-md-8 mx-auto">
             <div id="right-column">
               <div id="hits"></div>
             </div>
@@ -135,21 +131,17 @@
           <div class="hit-content">
             <div class="row">      
               <div class="col-8 col-xs-12 col-md-8 col-sm-12">      
-                <a href="{{title_link}}" style="text-decoration:none;"> <h5 class="hit-name mb-2 text-dark">{{{_highlightResult.name.value}}}</h5></a>
-                <p class="hit-description">{{{_highlightResult.short_description.value}}}</p>
-                <p class="">{{{_highlightResult.location.value}}}</p>
+                <a href="{{title_link}}" style="text-decoration:none;"> <h5 class="hit-name mb-2 text-dark">{{{_highlightResult.title.value}}}</h5></a>
+                <p class="hit-description">{{{_highlightResult.description.value}}}</p>
+                <p class="">{{location}}</p>
 
-                <a href="{{link}}" class="btn btn-md btn-success"> Läs mer </a>
+                <a href="{{link}}" class=""> Read from the source </a>
               </div>
               <div class="col-4 d-none d-sm-block d-xs-block">
                 <div class="card">
                   <div class="card-body pb-0">
-                    <h6 class=""> Plats: </h6>
-                    <p class="">{{{_highlightResult.place.value}}}</p>
-                    <h6 class=""> Ranking: </h6>
-                    <p class="">{{{_highlightResult.rank.value}}}</p>
-                    <h6 class=""> Pris: </h6>
-                    <p class="" style="font-weight:500;"> Logga in för att se resultat</p>
+                    <h6> Location: </h6>
+                    <p class="">{{{_highlightResult.location.value}}}</p>
                   </div>
                 </div>
               </div>
