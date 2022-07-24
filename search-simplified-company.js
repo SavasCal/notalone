@@ -23,7 +23,7 @@ function app(opts) {
 
     instantsearch.widgets.searchBox({
       container: '#search-input',
-      placeholder: 'Sök på produkt, märke, plats..',
+      placeholder: 'Search for stories',
     }),
     instantsearch.widgets.hits({
       container: '#hits',
