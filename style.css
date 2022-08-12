@@ -564,18 +564,6 @@ footer a:hover {
 }
 
 
-
 h4 {
   font-weight: 300;
-}
-
-
-@media only screen and (max-width: 600px) {
-  #left-column {
-    display: none;
-    width: 0%;
-  }
-  #right-column {
-    width: 100%;
-  }
 }
