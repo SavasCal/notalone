@@ -23,7 +23,7 @@ function app(opts) {
 
     instantsearch.widgets.searchBox({
       container: '#search-input',
-      placeholder: 'Search for stories',
+      placeholder: 'Search for others stories',
     }),
     instantsearch.widgets.hits({
       container: '#hits',
@@ -32,20 +32,7 @@ function app(opts) {
         empty: getTemplate('no-results'),
       },
     }),
-    instantsearch.widgets.refinementList({
-      container: '#brand',
-      attribute: 'brand',
-      operator: 'or',
-      searchForFacetValues: {
-        placeholder: 'Search for brands',
-        templates: {
-          noResults: '<div class="sffv_no-results">No matching brands.</div>',
-        },
-      },
-      templates: {
-        header: getHeader('Brand'),
-      },
-    }),
+
     instantsearch.widgets.refinementList({
       container: '#type',
       attribute: 'attribute',

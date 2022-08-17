@@ -17,7 +17,7 @@ footer {
 }
 main {
   min-height: 360px;
-  width: 80%;
+  width: 100%;
 }
 #left-column {
   float: left;
@@ -71,7 +71,7 @@ header img {
 }
 #search-input .ais-SearchBox-submit,
 #search-input .ais-SearchBox-reset {
-  top: 16px;
+  top: 8px;
 }
 
 .ais-SearchBox-submit svg,
@@ -84,7 +84,7 @@ header img {
 
 }
 #search-input input {
-  font-size: 22px;
+  font-size: 16px;
   padding-left: 100px;
   font-weight: 100;
   padding: 10px 10px 5px 35px;
@@ -364,7 +364,7 @@ h3, h2 {
   text-decoration: line-through;
   color: #ed5565;
 }
-.ais-RefinementList-count,
+/*.ais-RefinementList-count,
 .ais-HierarchicalMenu-count,
 .ais-Menu-count,
 .ais-RatingMenu-count,
@@ -373,6 +373,7 @@ h3, h2 {
   float: right;
   color: #999;
 }
+*/
 
 /* NO RESULTS */
 .no-results #pagination,

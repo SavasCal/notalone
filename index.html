@@ -100,8 +100,8 @@
     <div class="row mt-5">
       <div class="col-md-3"></div>
       <div class="col-md-6">
-        <h2 class="text-dark">You are <strong> not alone</strong> in this</h2>
-        <h5 class="text-dark mt-2" style="font-weight: 300;">Find others stories during grief to relate to </h5>
+        <h3 class="text-dark">You are <strong> not alone</strong> in this</h3>
+        <h6 class="text-dark mt-2" style="font-weight: 300;">Find others stories during grief to relate to </h6>
         <a class="mt-3" href="/">English</a>  <a class="mt-3" href="/sv">Swedish</a> <a class="mt-3" href="/tr"> Turkish</a>
       </div>
       <div class="row">
@@ -148,17 +148,17 @@
               </div>
               <div class="hit-content">
                 <div class="row">      
-                  <div class="col-8 col-xs-12 col-md-8 col-sm-12">      
+                  <div class="col-9 col-xs-12 col-md-8 col-sm-12">      
                     <a href="{{title_link}}" style="text-decoration:none;"> <h5 class="hit-name mb-2 text-dark">{{{_highlightResult.title.value}}}</h5></a>
-                    <p class="hit-description">{{{_highlightResult.description.value}}}</p>
+                    <p class="mt-3 hit-description">{{{_highlightResult.description.value}}}</p>
                     <p class="">{{location}}</p>
 
                     <a href="{{link}}" class=""> Read from the source </a>
                   </div>
-                  <div class="col-4 d-none d-sm-block d-xs-block">
+                  <div class="col-3 d-none d-sm-block d-xs-block">
                     <div class="card">
                       <div class="card-body pb-0">
-                        <h6> Location: </h6>
+                        <p> Tags <p>
                         <p class="">{{{_highlightResult.location.value}}}</p>
                       </div>
                     </div>
