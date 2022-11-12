@@ -19,6 +19,10 @@ main {
   min-height: 360px;
   width: 100%;
 }
+
+a {
+  font-size: 0.8em;
+}
 #left-column {
   float: left;
   width: 100%;
@@ -525,8 +529,7 @@ a.clear-all:hover {
 /* FOOTER */
 footer {
   font-size: 14px;
-  margin-top: 100px;
-  margin-bottom: 15px;
+  margin-bottom: 0px;
   text-align: center;
 }
 footer a {
